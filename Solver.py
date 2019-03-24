@@ -21,9 +21,9 @@ class solver:
         elif(dir == 2): #down
             newIndex = (index[0] + 1, index[1])
         elif(dir == 3): #left
-            newIndex = (index[0], index[1] + 1)
-        elif(dir == 2): #right
             newIndex = (index[0], index[1] - 1)
+        elif(dir == 4): #right
+            newIndex = (index[0], index[1] + 1)
         
         if(not ((newIndex[0] >= 0 and newIndex[0] <= 2) and (newIndex[1] >= 0 and newIndex[1] <= 2))): return None
         
